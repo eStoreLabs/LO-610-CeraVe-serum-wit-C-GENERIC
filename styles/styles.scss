@@ -103,19 +103,8 @@ $media-breakpoint-xl: 1200px;
       background-position: 64%;
       background-repeat: no-repeat;
       position: relative;
-      @container es-rc-content (min-width: 576px) {
-        background-color: $color-accent;
-        background-size: cover;
-        background-position: center;
-        padding: $px-XXL;
-      }
       &__textCtn {
         padding: $px-XL;
-        @container es-rc-content (min-width: 576px) {
-          padding: 0;
-          max-width: 380px;
-          margin: auto;
-        }
       }
       &__title {
         color: $color-accent;
@@ -143,8 +132,19 @@ $media-breakpoint-xl: 1200px;
       &__icon {
         max-width: 70px;
       }
-      &__wrapper {
-        @container es-rc-content (min-width: 576px) {
+    }
+    @container es-rc-content (min-width: 576px) {
+      &__right {
+        background-color: $color-accent;
+        background-size: cover;
+        background-position: center;
+        padding: $px-XXL;
+        &__textCtn {
+          padding: 0;
+          max-width: 380px;
+          margin: auto;
+        }
+        &__wrapper {
           display: flex;
           align-items: center;
           gap: $px-M;

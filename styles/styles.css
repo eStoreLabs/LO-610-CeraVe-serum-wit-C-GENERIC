@@ -75,23 +75,8 @@
   background-repeat: no-repeat;
   position: relative;
 }
-@container es-rc-content (min-width: 576px) {
-  #es-rc #es-rc-content .es-kv__right {
-    background-color: #0073ce;
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
-  }
-}
 #es-rc #es-rc-content .es-kv__right__textCtn {
   padding: 32px;
-}
-@container es-rc-content (min-width: 576px) {
-  #es-rc #es-rc-content .es-kv__right__textCtn {
-    padding: 0;
-    max-width: 380px;
-    margin: auto;
-  }
 }
 #es-rc #es-rc-content .es-kv__right__title {
   color: #0073ce;
@@ -118,6 +103,17 @@
   max-width: 70px;
 }
 @container es-rc-content (min-width: 576px) {
+  #es-rc #es-rc-content .es-kv__right {
+    background-color: #0073ce;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+  }
+  #es-rc #es-rc-content .es-kv__right__textCtn {
+    padding: 0;
+    max-width: 380px;
+    margin: auto;
+  }
   #es-rc #es-rc-content .es-kv__right__wrapper {
     display: flex;
     align-items: center;
