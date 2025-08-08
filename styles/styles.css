@@ -9,6 +9,9 @@
   margin: auto;
   container-type: inline-size;
   container-name: es-rc-content;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 #es-rc #es-rc-content ::-moz-selection {
   background-color: #46d7ac;
@@ -172,6 +175,14 @@
   color: #ffffff;
   padding: 24px;
 }
+#es-rc #es-rc-content .es-features ::-moz-selection {
+  background-color: #0073ce;
+  color: #ffffff;
+}
+#es-rc #es-rc-content .es-features ::selection {
+  background-color: #0073ce;
+  color: #ffffff;
+}
 #es-rc #es-rc-content .es-features__wrapper {
   display: flex;
   flex-direction: column;
@@ -204,6 +215,7 @@
   justify-content: center;
   gap: 16px;
   margin-top: 24px;
+  max-width: 300px;
 }
 #es-rc #es-rc-content .es-features__badge__img {
   width: 25%;
@@ -226,13 +238,13 @@
 }
 #es-rc #es-rc-content .es-features__shape {
   background-color: #003058;
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 16% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 8% 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 16px 16px 40px;
+  padding: 8px 8px 8px 24px;
   gap: 16px;
-  max-width: 270px;
+  max-width: 250px;
   margin-left: auto;
   margin-block: 24px;
 }
@@ -245,8 +257,68 @@
   font-weight: 600;
   font-size: 28.8px;
 }
+#es-rc #es-rc-content .es-features__bg {
+  display: none;
+}
 @container es-rc-content (min-width: 360px) {
   #es-rc #es-rc-content .es-features__badge__text {
     font-size: 19.2px;
+  }
+}
+@container es-rc-content (min-width: 440px) {
+  #es-rc #es-rc-content .es-features__hand__container {
+    position: relative;
+    margin-block: 24px;
+    z-index: 2;
+  }
+  #es-rc #es-rc-content .es-features__shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+@container es-rc-content (min-width: 576px) {
+  #es-rc #es-rc-content .es-features {
+    position: relative;
+    z-index: 1;
+  }
+  #es-rc #es-rc-content .es-features__hand__container {
+    position: static;
+    margin: 0;
+  }
+  #es-rc #es-rc-content .es-features__hand__image {
+    display: none;
+  }
+  #es-rc #es-rc-content .es-features__bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+  }
+  #es-rc #es-rc-content .es-features__bg__image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #es-rc #es-rc-content .es-features__wrapper--top {
+    width: 50%;
+  }
+  #es-rc #es-rc-content .es-features__wrapper--bottom {
+    width: 81%;
+  }
+}
+@container es-rc-content (min-width: 768px) {
+  #es-rc #es-rc-content .es-features__bg {
+    width: 100%;
+  }
+  #es-rc #es-rc-content .es-features__bg__image {
+    min-height: -moz-max-content;
+    min-height: max-content;
+  }
+  #es-rc #es-rc-content .es-features__wrapper--bottom {
+    width: 75%;
   }
 }/*# sourceMappingURL=styles.css.map */
