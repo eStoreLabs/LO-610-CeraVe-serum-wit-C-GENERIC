@@ -62,6 +62,8 @@ $media-breakpoint-xl: 1200px;
     font-size: $fs-header;
     font-weight: $fw-bold;
     text-align: center;
+    text-wrap: balance;
+    text-transform: uppercase;
     margin-block: $px-M;
   }
 
@@ -109,7 +111,7 @@ $media-breakpoint-xl: 1200px;
       &__title {
         color: $color-accent;
         font-weight: $fw-semibold;
-        font-size: $fs-header;
+        font-size: calc(0.8 * $fs-header);
         text-transform: uppercase;
         padding-bottom: $px-M;
         margin-bottom: $px-M;
@@ -131,6 +133,13 @@ $media-breakpoint-xl: 1200px;
       }
       &__icon {
         max-width: 70px;
+      }
+    }
+    @container es-rc-content (min-width: 340px) {
+      &__right {
+        &__title {
+          font-size: $fs-header;
+        }
       }
     }
     @container es-rc-content (min-width: 576px) {
@@ -188,6 +197,96 @@ $media-breakpoint-xl: 1200px;
         }
         &__text {
           font-size: $fs-base-md;
+        }
+      }
+    }
+  }
+
+  .es-features {
+    background-color: $color-accent-2;
+    color: $color-bg;
+    padding: $px-L;
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    &__title {
+      text-align: left;
+      margin-top: 0;
+    }
+    &__subtitle {
+      color: $color-main;
+      font-size: calc(1.12 * $fs-base);
+      margin-top: $px-L;
+    }
+    &__points {
+      margin-top: $px-L;
+      &__item {
+        display: flex;
+        justify-content: flex-start;
+        gap: $px-S;
+      }
+      &__icon {
+        width: $fs-base;
+        height: $fs-base;
+        margin: 0;
+      }
+    }
+    &__badge {
+      &Ctn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $px-M;
+        margin-top: $px-L;
+      }
+      &__img {
+        width: 25%;
+        max-width: 100px;
+      }
+      &__text {
+        color: $color-main;
+        text-transform: uppercase;
+        font-size: $fs-base;
+        &--bold {
+          font-weight: $fw-bold;
+        }
+      }
+    }
+    &__text {
+      font-size: $fs-base;
+      margin-top: $px-L;
+    }
+    &__hand {
+      &__container {
+        margin-right: -$px-L;
+      }
+    }
+    &__shape {
+      background-color: $color-main;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 16% 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: $px-M $px-M $px-M $px-XXL;
+      gap: $px-M;
+      max-width: 270px;
+      margin-left: auto;
+      margin-block: $px-L;
+      &__text {
+        text-transform: uppercase;
+        font-weight: $fw-semibold;
+        font-size: calc(0.7 * $fs-base);
+        &--number {
+          font-weight: $fw-semibold;
+          font-size: calc(1.8 * $fs-base);
+        }
+      }
+    }
+    @container es-rc-content (min-width: 360px) {
+      &__badge {
+        &__text {
+          font-size: calc(1.2 * $fs-base);
         }
       }
     }
