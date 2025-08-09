@@ -746,4 +746,15 @@
   #es-rc #es-rc-content .es-cross__item__image {
     max-width: 140px;
   }
+}
+#es-rc #es-rc-content .es-disclaimer {
+  font-size: 11px;
+  margin-block: 40px;
+}
+#es-rc #es-rc-content .es-footer {
+  background-color: #0073ce;
+  padding: 20px;
+}
+#es-rc #es-rc-content .es-footer__logo {
+  max-width: 200px;
 }/*# sourceMappingURL=styles.css.map */
