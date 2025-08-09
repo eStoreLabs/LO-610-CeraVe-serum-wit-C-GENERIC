@@ -477,4 +477,85 @@ $transition: all 0.3s ease-in-out;
       }
     }
   }
+
+  .es-benefits {
+    &__image {
+      &__container {
+        position: relative;
+        z-index: 1;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $color-accent-2;
+          clip-path: polygon(88% 0%, 100% 0%, 100% 100%, 5% 100%);
+          z-index: -1;
+        }
+      }
+    }
+    &__container {
+      padding: $px-L;
+      display: flex;
+      flex-direction: column;
+      gap: $px-L;
+    }
+    &__title {
+      font-size: 24px;
+      text-transform: uppercase;
+      span {
+        font-weight: $fw-bold;
+      }
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      &__item {
+        display: flex;
+        align-items: center;
+        gap: $px-M;
+        margin-top: $px-L;
+      }
+      &__icon {
+        max-width: 40px;
+        margin: unset;
+      }
+      &__text {
+        font-size: 20px;
+      }
+    }
+    @container es-rc-content (min-width: 576px) {
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 400px;
+      &__image {
+        &__container {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 66%;
+          &::after {
+            display: none;
+          }
+        }
+      }
+      &__container {
+        position: relative;
+        z-index: 2;
+        width: 55%;
+      }
+    }
+    @container es-rc-content (min-width: 768px) {
+      min-height: 450px;
+      padding: $px-XL;
+       &__image {
+        &__container {
+          width: 55%;
+        }
+      }
+    }
+  }
 }
