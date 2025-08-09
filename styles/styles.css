@@ -506,4 +506,45 @@
   #es-rc #es-rc-content .es-benefits__image__container {
     width: 55%;
   }
+}
+#es-rc #es-rc-content .es-formula-use__content {
+  background-color: #46d7ac;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+#es-rc #es-rc-content .es-formula-use__name {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+@container es-rc-content (min-width: 576px) {
+  #es-rc #es-rc-content .es-formula-use {
+    display: flex;
+    align-items: center;
+    background-color: #46d7ac;
+    position: relative;
+  }
+  #es-rc #es-rc-content .es-formula-use__image {
+    width: 54%;
+    min-height: 284px;
+    margin-left: 0;
+  }
+  #es-rc #es-rc-content .es-formula-use__content {
+    margin-left: -30px;
+    background-color: transparent;
+    width: 49%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@container es-rc-content (min-width: 768px) {
+  #es-rc #es-rc-content .es-formula-use__image {
+    width: 50%;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -551,10 +551,52 @@ $transition: all 0.3s ease-in-out;
     @container es-rc-content (min-width: 768px) {
       min-height: 450px;
       padding: $px-XL;
-       &__image {
+      &__image {
         &__container {
           width: 55%;
         }
+      }
+    }
+  }
+
+  .es-formula-use {
+    &__content {
+      background-color: $color-accent-2;
+      padding: $px-L;
+      display: flex;
+      flex-direction: column;
+      gap: $px-XL;
+    }
+    &__name {
+      color: $color-bg;
+      text-transform: uppercase;
+      font-weight: $fw-bold;
+      font-size: 24px;
+      margin-bottom: $px-L;
+    }
+    @container es-rc-content (min-width: 576px) {
+      display: flex;
+      align-items: center;
+      background-color: $color-accent-2;
+      position: relative;
+      &__image {
+        width: 54%;
+        min-height: 284px;
+        margin-left: 0;
+      }
+      &__content {
+        margin-left: -30px;
+        background-color: transparent;
+        width: 49%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    @container es-rc-content (min-width: 768px) {
+      &__image {
+        width: 50%;
       }
     }
   }
