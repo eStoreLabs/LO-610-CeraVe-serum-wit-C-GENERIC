@@ -165,7 +165,7 @@ $transition: all 0.3s ease-in-out;
         }
       }
     }
-    @container es-rc-content (min-width: 680px) {
+    @container es-rc-content (min-width: 589px) {
       display: flex;
       position: relative;
       background-color: $color-accent;
@@ -182,6 +182,12 @@ $transition: all 0.3s ease-in-out;
         display: flex;
         align-items: center;
         justify-content: center;
+        &__textCtn {
+          margin-left: 16%;
+        }
+        &__title {
+          font-size: 30px;
+        }
         &__logo {
           max-width: 19%;
           right: 8%;
@@ -195,10 +201,12 @@ $transition: all 0.3s ease-in-out;
         &__textCtn {
           max-width: 420px;
           margin-right: auto;
-          margin-left: 17%;
+          margin-left: 15%;
         }
         &__title {
           font-size: $fs-header-md;
+          width: 100%;
+          margin-left: 0;
         }
         &__text {
           font-size: $fs-base-md;
