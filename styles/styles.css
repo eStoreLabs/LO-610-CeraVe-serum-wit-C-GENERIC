@@ -564,6 +564,12 @@
     width: 50%;
   }
 }
+#es-rc #es-rc-content .es-video__iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  border: 0;
+}
 #es-rc #es-rc-content .es-packaging {
   display: flex;
   flex-direction: column;
