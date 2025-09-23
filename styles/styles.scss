@@ -287,27 +287,6 @@ $transition: all 0.3s ease-in-out;
         margin-right: -$px-L;
       }
     }
-    &__shape {
-      background-color: $color-main;
-      clip-path: polygon(0 0, 100% 0%, 100% 100%, 8% 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 8px 8px 8px 24px;
-      gap: $px-M;
-      max-width: 250px;
-      margin-left: auto;
-      margin-block: $px-L;
-      &__text {
-        text-transform: uppercase;
-        font-weight: $fw-semibold;
-        font-size: calc(0.7 * $fs-base);
-        &--number {
-          font-weight: $fw-semibold;
-          font-size: calc(1.8 * $fs-base);
-        }
-      }
-    }
     &__bg {
       display: none;
     }
@@ -325,11 +304,6 @@ $transition: all 0.3s ease-in-out;
           margin-block: $px-L;
           z-index: 2;
         }
-      }
-      &__shape {
-        position: absolute;
-        top: 0;
-        right: 0;
       }
     }
     @container es-rc-content (min-width: 576px) {
@@ -395,16 +369,6 @@ $transition: all 0.3s ease-in-out;
       &__text {
         font-size: 18.4px;
         margin-top: 32px;
-      }
-      &__shape {
-        padding: 0px 0px 0px 24px;
-        max-width: 305px;
-        &__text {
-          font-size: 14px;
-          &--number {
-            font-size: 48px;
-          }
-        }
       }
       &__wrapper {
         &--top {
