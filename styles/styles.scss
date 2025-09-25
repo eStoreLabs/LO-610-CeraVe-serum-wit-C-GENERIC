@@ -173,7 +173,7 @@ $transition: all 0.3s ease-in-out;
         width: 46%;
       }
       &__right {
-        width: 72%;
+        width: 73%;
         position: absolute;
         right: 0;
         top: 0;
@@ -220,16 +220,21 @@ $transition: all 0.3s ease-in-out;
         }
       }
     }
+    @container es-rc-content (min-width: 980px) {
+      &__right {
+        width: 71%;
+        &__logo {
+          right: 7%;
+        }
+      }
+    }
   }
 
   .es-features {
-    background-color: $color-accent-2;
+    background-color: $color-accent;
     color: $color-bg;
     padding: $px-L;
-    ::selection {
-      background-color: $color-accent;
-      color: $color-bg;
-    }
+
     &__wrapper {
       display: flex;
       flex-direction: column;
@@ -239,7 +244,6 @@ $transition: all 0.3s ease-in-out;
       margin-top: 0;
     }
     &__subtitle {
-      color: $color-main;
       font-size: calc(1.12 * $fs-base);
       margin-top: $px-L;
     }
@@ -262,7 +266,7 @@ $transition: all 0.3s ease-in-out;
         align-items: center;
         justify-content: center;
         gap: $px-M;
-        margin-top: $px-L;
+        margin-top: $px-XL;
         max-width: 300px;
       }
       &__img {
@@ -270,7 +274,6 @@ $transition: all 0.3s ease-in-out;
         max-width: 100px;
       }
       &__text {
-        color: $color-main;
         text-transform: uppercase;
         font-size: $fs-base;
         &--bold {
@@ -280,10 +283,11 @@ $transition: all 0.3s ease-in-out;
     }
     &__text {
       font-size: $fs-base;
-      margin-top: $px-L;
+      margin-top: $px-XL;
     }
     &__hand {
       &__container {
+        margin-top: $px-XL;
         margin-right: -$px-L;
       }
     }
@@ -324,6 +328,7 @@ $transition: all 0.3s ease-in-out;
         top: 0;
         right: 0;
         height: 100%;
+        width: 100%;
         z-index: -1;
         &__image {
           width: 100%;
@@ -341,12 +346,9 @@ $transition: all 0.3s ease-in-out;
       }
     }
     @container es-rc-content (min-width: 768px) {
-      padding: $px-XL;
+      padding: $px-XXL $px-XL;
       &__bg {
         width: 100%;
-        &__image {
-          min-height: max-content;
-        }
       }
       &__title {
         font-size: 32px;
@@ -380,6 +382,12 @@ $transition: all 0.3s ease-in-out;
           max-width: 600px;
           margin-top: 48px;
         }
+      }
+    }
+    @container es-rc-content (min-width: 980px) {
+      overflow: hidden;
+      &__bg {
+        width: 105%;
       }
     }
   }
@@ -426,7 +434,7 @@ $transition: all 0.3s ease-in-out;
       &__title {
         font-weight: $fw-bold;
         text-transform: uppercase;
-        color: $color-accent-2;
+        color: $color-accent;
         font-size: 20px;
       }
       &__text {
@@ -452,6 +460,11 @@ $transition: all 0.3s ease-in-out;
 
   .es-benefits {
     &__image {
+      &.es-mobile {
+        width: 80%;
+        max-width: 300px;
+        padding: $px-XL;
+      }
       &__container {
         position: relative;
         z-index: 1;
@@ -462,8 +475,8 @@ $transition: all 0.3s ease-in-out;
           right: 0;
           width: 100%;
           height: 100%;
-          background-color: $color-accent-2;
-          clip-path: polygon(88% 0%, 100% 0%, 100% 100%, 5% 100%);
+          background-color: $color-accent;
+          clip-path: polygon(76% 0%, 100% 0%, 100% 100%, 5% 100%);
           z-index: -1;
         }
       }
@@ -508,7 +521,7 @@ $transition: all 0.3s ease-in-out;
           position: absolute;
           right: 0;
           bottom: 0;
-          width: 66%;
+          width: 59%;
           &::after {
             display: none;
           }
@@ -517,7 +530,7 @@ $transition: all 0.3s ease-in-out;
       &__container {
         position: relative;
         z-index: 2;
-        width: 55%;
+        width: 65%;
       }
     }
     @container es-rc-content (min-width: 768px) {
@@ -528,23 +541,22 @@ $transition: all 0.3s ease-in-out;
           width: 55%;
         }
       }
+      &__container {
+        width: 50%;
+      }
     }
   }
 
   .es-formula-use {
-    ::selection {
+    &__content {
       background-color: $color-accent;
       color: $color-bg;
-    }
-    &__content {
-      background-color: $color-accent-2;
       padding: $px-L;
       display: flex;
       flex-direction: column;
       gap: $px-XL;
     }
     &__name {
-      color: $color-bg;
       text-transform: uppercase;
       font-weight: $fw-bold;
       font-size: 24px;
@@ -553,7 +565,7 @@ $transition: all 0.3s ease-in-out;
     @container es-rc-content (min-width: 576px) {
       display: flex;
       align-items: center;
-      background-color: $color-accent-2;
+      background-color: $color-accent;
       position: relative;
       &__image {
         width: 54%;

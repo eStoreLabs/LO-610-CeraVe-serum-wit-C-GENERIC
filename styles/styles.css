@@ -140,7 +140,7 @@
     width: 46%;
   }
   #es-rc #es-rc-content .es-kv__right {
-    width: 72%;
+    width: 73%;
     position: absolute;
     right: 0;
     top: 0;
@@ -183,18 +183,18 @@
     margin-left: 20%;
   }
 }
+@container es-rc-content (min-width: 980px) {
+  #es-rc #es-rc-content .es-kv__right {
+    width: 71%;
+  }
+  #es-rc #es-rc-content .es-kv__right__logo {
+    right: 7%;
+  }
+}
 #es-rc #es-rc-content .es-features {
-  background-color: #46d7ac;
+  background-color: #0073ce;
   color: #ffffff;
   padding: 24px;
-}
-#es-rc #es-rc-content .es-features ::-moz-selection {
-  background-color: #0073ce;
-  color: #ffffff;
-}
-#es-rc #es-rc-content .es-features ::selection {
-  background-color: #0073ce;
-  color: #ffffff;
 }
 #es-rc #es-rc-content .es-features__wrapper {
   display: flex;
@@ -205,7 +205,6 @@
   margin-top: 0;
 }
 #es-rc #es-rc-content .es-features__subtitle {
-  color: #003058;
   font-size: 17.92px;
   margin-top: 24px;
 }
@@ -227,7 +226,7 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-top: 24px;
+  margin-top: 32px;
   max-width: 300px;
 }
 #es-rc #es-rc-content .es-features__badge__img {
@@ -235,7 +234,6 @@
   max-width: 100px;
 }
 #es-rc #es-rc-content .es-features__badge__text {
-  color: #003058;
   text-transform: uppercase;
   font-size: 16px;
 }
@@ -244,9 +242,10 @@
 }
 #es-rc #es-rc-content .es-features__text {
   font-size: 16px;
-  margin-top: 24px;
+  margin-top: 32px;
 }
 #es-rc #es-rc-content .es-features__hand__container {
+  margin-top: 32px;
   margin-right: -24px;
 }
 #es-rc #es-rc-content .es-features__bg {
@@ -282,6 +281,7 @@
     top: 0;
     right: 0;
     height: 100%;
+    width: 100%;
     z-index: -1;
   }
   #es-rc #es-rc-content .es-features__bg__image {
@@ -299,14 +299,10 @@
 }
 @container es-rc-content (min-width: 768px) {
   #es-rc #es-rc-content .es-features {
-    padding: 32px;
+    padding: 40px 32px;
   }
   #es-rc #es-rc-content .es-features__bg {
     width: 100%;
-  }
-  #es-rc #es-rc-content .es-features__bg__image {
-    min-height: -moz-max-content;
-    min-height: max-content;
   }
   #es-rc #es-rc-content .es-features__title {
     font-size: 32px;
@@ -336,6 +332,14 @@
     width: 70%;
     max-width: 600px;
     margin-top: 48px;
+  }
+}
+@container es-rc-content (min-width: 980px) {
+  #es-rc #es-rc-content .es-features {
+    overflow: hidden;
+  }
+  #es-rc #es-rc-content .es-features__bg {
+    width: 105%;
   }
 }
 #es-rc #es-rc-content .es-ingredients {
@@ -382,7 +386,7 @@
 #es-rc #es-rc-content .es-ingredients__list__title {
   font-weight: 700;
   text-transform: uppercase;
-  color: #46d7ac;
+  color: #0073ce;
   font-size: 20px;
 }
 #es-rc #es-rc-content .es-ingredients__list__text {
@@ -403,6 +407,11 @@
     width: 250px;
   }
 }
+#es-rc #es-rc-content .es-benefits__image.es-mobile {
+  width: 80%;
+  max-width: 300px;
+  padding: 32px;
+}
 #es-rc #es-rc-content .es-benefits__image__container {
   position: relative;
   z-index: 1;
@@ -414,8 +423,8 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: #46d7ac;
-  clip-path: polygon(88% 0%, 100% 0%, 100% 100%, 5% 100%);
+  background-color: #0073ce;
+  clip-path: polygon(76% 0%, 100% 0%, 100% 100%, 5% 100%);
   z-index: -1;
 }
 #es-rc #es-rc-content .es-benefits__container {
@@ -459,7 +468,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 66%;
+    width: 59%;
   }
   #es-rc #es-rc-content .es-benefits__image__container::after {
     display: none;
@@ -467,7 +476,7 @@
   #es-rc #es-rc-content .es-benefits__container {
     position: relative;
     z-index: 2;
-    width: 55%;
+    width: 65%;
   }
 }
 @container es-rc-content (min-width: 768px) {
@@ -478,24 +487,19 @@
   #es-rc #es-rc-content .es-benefits__image__container {
     width: 55%;
   }
-}
-#es-rc #es-rc-content .es-formula-use ::-moz-selection {
-  background-color: #0073ce;
-  color: #ffffff;
-}
-#es-rc #es-rc-content .es-formula-use ::selection {
-  background-color: #0073ce;
-  color: #ffffff;
+  #es-rc #es-rc-content .es-benefits__container {
+    width: 50%;
+  }
 }
 #es-rc #es-rc-content .es-formula-use__content {
-  background-color: #46d7ac;
+  background-color: #0073ce;
+  color: #ffffff;
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 #es-rc #es-rc-content .es-formula-use__name {
-  color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 24px;
@@ -505,7 +509,7 @@
   #es-rc #es-rc-content .es-formula-use {
     display: flex;
     align-items: center;
-    background-color: #46d7ac;
+    background-color: #0073ce;
     position: relative;
   }
   #es-rc #es-rc-content .es-formula-use__image {
