@@ -20,7 +20,7 @@ $px-XXL: 40px;
 $color-main: #003058;
 $color-bg: #ffffff;
 $color-accent: #0073ce;
-$color-accent-2: #46d7ac;
+$color-accent-2: #673996;
 
 $media-breakpoint-sm: 576px;
 $media-breakpoint-md: 768px;
@@ -46,7 +46,7 @@ $transition: all 0.3s ease-in-out;
 
   ::selection {
     background-color: $color-accent-2;
-    color: $color-main;
+    color: $color-bg;
   }
 
   * {
@@ -231,7 +231,7 @@ $transition: all 0.3s ease-in-out;
   }
 
   .es-features {
-    background-color: $color-accent;
+    background-color: $color-accent-2;
     color: $color-bg;
     padding: $px-L;
 
@@ -393,15 +393,7 @@ $transition: all 0.3s ease-in-out;
   }
 
   .es-ingredients {
-    position: relative;
     z-index: 1;
-    &__bubbles {
-      position: absolute;
-      top: $px-L;
-      left: 0;
-      z-index: -1;
-      max-width: 300px;
-    }
     &__content {
       padding: $px-L;
     }
@@ -434,7 +426,7 @@ $transition: all 0.3s ease-in-out;
       &__title {
         font-weight: $fw-bold;
         text-transform: uppercase;
-        color: $color-accent;
+        color: $color-accent-2;
         font-size: 20px;
       }
       &__text {
@@ -475,7 +467,7 @@ $transition: all 0.3s ease-in-out;
           right: 0;
           width: 100%;
           height: 100%;
-          background-color: $color-accent;
+          background-color: $color-accent-2;
           clip-path: polygon(76% 0%, 100% 0%, 100% 100%, 5% 100%);
           z-index: -1;
         }
@@ -549,7 +541,7 @@ $transition: all 0.3s ease-in-out;
 
   .es-formula-use {
     &__content {
-      background-color: $color-accent;
+      background-color: $color-accent-2;
       color: $color-bg;
       padding: $px-L;
       display: flex;
@@ -565,7 +557,7 @@ $transition: all 0.3s ease-in-out;
     @container es-rc-content (min-width: 576px) {
       display: flex;
       align-items: center;
-      background-color: $color-accent;
+      background-color: $color-accent-2;
       position: relative;
       &__image {
         width: 54%;
@@ -598,103 +590,6 @@ $transition: all 0.3s ease-in-out;
     }
   }
 
-  .es-packaging {
-    display: flex;
-    flex-direction: column;
-    gap: $px-XL;
-
-    &__left {
-      display: flex;
-      flex-direction: column;
-      gap: $px-S;
-      padding: $px-L;
-      .es-section-title {
-        text-align: left;
-      }
-    }
-    &__title {
-      &--highlight {
-        color: $color-accent;
-      }
-    }
-    &__subtitle {
-      font-size: 24px;
-    }
-    &__refill {
-      padding: $px-L;
-      img {
-        max-width: 300px;
-      }
-    }
-    &__packs {
-      position: relative;
-      z-index: 1;
-      padding: $px-L;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      img {
-        max-width: 400px;
-      }
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background-color: $color-accent;
-        clip-path: polygon(76% 0%, 100% 0%, 100% 100%, 5% 100%);
-        z-index: -1;
-      }
-      &__sizes {
-        display: flex;
-        color: $color-bg;
-        justify-content: space-around;
-        width: 100%;
-        max-width: 400px;
-      }
-    }
-    @container es-rc-content (min-width: 576px) {
-      &__right {
-        display: flex;
-        justify-content: space-around;
-        align-items: end;
-        width: 100%;
-      }
-      &__refill {
-        position: relative;
-        z-index: 2;
-      }
-      &__packs {
-        &::after {
-          width: 175%;
-          clip-path: polygon(57% 0%, 100% 0%, 100% 100%, 5% 100%);
-        }
-      }
-    }
-    @container es-rc-content (min-width: 768px) {
-      flex-direction: row;
-      &__left {
-        justify-content: center;
-        text-align: left;
-      }
-      &__title {
-        text-align: left;
-        &--highlight {
-          min-width: max-content;
-        }
-      }
-      &__packs {
-        &::after {
-          width: 137%;
-        }
-      }
-    }
-  }
-
   .es-cross {
     &__content {
       display: flex;
@@ -724,7 +619,7 @@ $transition: all 0.3s ease-in-out;
             right: 0;
             width: 100%;
             height: 100%;
-            background-color: $color-accent;
+            background-color: $color-accent-2;
             clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 100% 100%);
             z-index: -1;
           }
@@ -747,7 +642,7 @@ $transition: all 0.3s ease-in-out;
         }
         &-name {
           font-size: 20px;
-          color: $color-accent;
+          color: $color-accent-2;
         }
         &-text {
           font-size: 18.4px;
