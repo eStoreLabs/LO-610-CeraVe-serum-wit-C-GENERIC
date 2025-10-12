@@ -14,11 +14,11 @@
   gap: 24px;
 }
 #es-rc #es-rc-content ::-moz-selection {
-  background-color: #673996;
+  background-color: #e97646;
   color: #ffffff;
 }
 #es-rc #es-rc-content ::selection {
-  background-color: #673996;
+  background-color: #e97646;
   color: #ffffff;
 }
 #es-rc #es-rc-content * {
@@ -204,6 +204,9 @@
   text-align: left;
   margin-top: 0;
 }
+#es-rc #es-rc-content .es-features__title--accent {
+  color: #e97646;
+}
 #es-rc #es-rc-content .es-features__subtitle {
   font-size: 17.92px;
   margin-top: 24px;
@@ -351,7 +354,15 @@
   }
 }
 #es-rc #es-rc-content .es-ingredients {
+  position: relative;
   z-index: 1;
+}
+#es-rc #es-rc-content .es-ingredients__bubbles {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  z-index: -1;
+  max-width: 300px;
 }
 #es-rc #es-rc-content .es-ingredients__content {
   padding: 24px;
@@ -394,13 +405,17 @@
   margin-top: 8px;
 }
 @container es-rc-content (min-width: 576px) {
-  #es-rc #es-rc-content .es-ingredients__list__item {
-    max-width: 40%;
+  #es-rc #es-rc-content .es-ingredients__content {
+    max-width: 830px;
+    margin-left: auto;
   }
 }
 @container es-rc-content (min-width: 768px) {
+  #es-rc #es-rc-content .es-ingredients__list {
+    justify-content: flex-end;
+  }
   #es-rc #es-rc-content .es-ingredients__list__item {
-    max-width: 22%;
+    max-width: 30%;
   }
 }
 #es-rc #es-rc-content .es-benefits__image.es-mobile {
@@ -517,7 +532,6 @@
   }
   #es-rc #es-rc-content .es-formula-use__image {
     width: 54%;
-    min-height: 350px;
     margin-left: 0;
   }
   #es-rc #es-rc-content .es-formula-use__content {
@@ -619,10 +633,10 @@
   transition: all 0.3s ease-in-out;
 }
 #es-rc #es-rc-content .es-cross__item__button:hover {
-  background-color: #673996;
+  background-color: #e97646;
 }
 #es-rc #es-rc-content .es-cross__item__image-container:hover ~ .es-cross__item__button, #es-rc #es-rc-content .es-cross__item__image:hover ~ .es-cross__item__button {
-  background-color: #673996;
+  background-color: #e97646;
 }
 @container es-rc-content (min-width: 660px) {
   #es-rc #es-rc-content .es-cross__content {

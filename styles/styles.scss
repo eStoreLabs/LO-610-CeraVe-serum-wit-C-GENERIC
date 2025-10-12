@@ -21,6 +21,7 @@ $color-main: #003058;
 $color-bg: #ffffff;
 $color-accent: #0073ce;
 $color-accent-2: #673996;
+$color-accent-3: #e97646;
 
 $media-breakpoint-sm: 576px;
 $media-breakpoint-md: 768px;
@@ -45,7 +46,7 @@ $transition: all 0.3s ease-in-out;
   gap: $px-L;
 
   ::selection {
-    background-color: $color-accent-2;
+    background-color: $color-accent-3;
     color: $color-bg;
   }
 
@@ -242,6 +243,9 @@ $transition: all 0.3s ease-in-out;
     &__title {
       text-align: left;
       margin-top: 0;
+      &--accent {
+        color: $color-accent-3;
+      }
     }
     &__subtitle {
       font-size: calc(1.12 * $fs-base);
@@ -401,7 +405,15 @@ $transition: all 0.3s ease-in-out;
   }
 
   .es-ingredients {
+    position: relative;
     z-index: 1;
+    &__bubbles {
+      position: absolute;
+      top: $px-L;
+      left: 0;
+      z-index: -1;
+      max-width: 300px;
+    }
     &__content {
       padding: $px-L;
     }
@@ -443,16 +455,16 @@ $transition: all 0.3s ease-in-out;
       }
     }
     @container es-rc-content (min-width: 576px) {
-      &__list {
-        &__item {
-          max-width: 40%;
-        }
+      &__content {
+        max-width: 830px;
+        margin-left: auto;
       }
     }
     @container es-rc-content (min-width: 768px) {
       &__list {
+        justify-content: flex-end;
         &__item {
-          max-width: 22%;
+          max-width: 30%;
         }
       }
     }
@@ -578,7 +590,6 @@ $transition: all 0.3s ease-in-out;
       position: relative;
       &__image {
         width: 54%;
-        min-height: 350px;
         margin-left: 0;
       }
       &__content {
@@ -687,13 +698,13 @@ $transition: all 0.3s ease-in-out;
         font-size: 20px;
         transition: $transition;
         &:hover {
-          background-color: $color-accent-2;
+          background-color: $color-accent-3;
         }
       }
       &__image-container:hover,
       &__image:hover {
         ~ .es-cross__item__button {
-          background-color: $color-accent-2;
+          background-color: $color-accent-3;
         }
       }
     }
