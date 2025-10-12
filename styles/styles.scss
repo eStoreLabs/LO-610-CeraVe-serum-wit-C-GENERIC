@@ -443,16 +443,16 @@ $transition: all 0.3s ease-in-out;
       }
     }
     @container es-rc-content (min-width: 576px) {
-      &__content {
-        max-width: 820px;
-        margin-left: auto;
+      &__list {
+        &__item {
+          max-width: 40%;
+        }
       }
     }
     @container es-rc-content (min-width: 768px) {
       &__list {
-        justify-content: flex-end;
         &__item {
-          width: 250px;
+          max-width: 22%;
         }
       }
     }
@@ -547,11 +547,11 @@ $transition: all 0.3s ease-in-out;
       padding: $px-XL;
       &__image {
         &__container {
-          width: 55%;
+          width: 60%;
         }
       }
       &__container {
-        width: 50%;
+        width: 60%;
       }
     }
   }
@@ -582,13 +582,13 @@ $transition: all 0.3s ease-in-out;
         margin-left: 0;
       }
       &__content {
-        margin-left: -30px;
         background-color: transparent;
         width: 50%;
         position: absolute;
         right: 0;
         top: 50%;
         transform: translateY(-50%);
+        gap: $px-M;
       }
     }
     @container es-rc-content (min-width: 660px) and (max-width: 767px) {
@@ -599,6 +599,9 @@ $transition: all 0.3s ease-in-out;
     @container es-rc-content (min-width: 768px) {
       &__image {
         width: 50%;
+      }
+      &__content {
+        width: 52%;
       }
     }
   }
@@ -719,6 +722,7 @@ $transition: all 0.3s ease-in-out;
         &__text {
           &-step {
             text-wrap: balance;
+            height: 3em;
           }
           &-description {
             height: 50px;
@@ -726,9 +730,21 @@ $transition: all 0.3s ease-in-out;
         }
       }
     }
-    @container es-rc-content (min-width: 880px) {
-      &__content {
-        gap: 8px;
+    @container es-rc-content (min-width: 800px) {
+      &__item {
+        &__image {
+          &-container {
+            aspect-ratio: 5 / 4;
+          }
+        }
+        &__text {
+          &-step {
+            height: unset;
+          }
+          &-description {
+            height: unset;
+          }
+        }
       }
     }
   }
