@@ -222,9 +222,9 @@ $transition: all 0.3s ease-in-out;
     }
     @container es-rc-content (min-width: 980px) {
       &__right {
-        width: 71%;
+        width: 74%;
         &__logo {
-          right: 7%;
+          right: 7.5%;
         }
       }
     }
@@ -454,8 +454,7 @@ $transition: all 0.3s ease-in-out;
     &__image {
       &.es-mobile {
         width: 80%;
-        max-width: 300px;
-        padding: $px-XL;
+        max-width: 350px;
       }
       &__container {
         position: relative;
@@ -602,7 +601,7 @@ $transition: all 0.3s ease-in-out;
       max-width: 400px;
       &__image {
         max-width: 170px;
-        padding: $px-L;
+        padding: $px-L $px-L 0 $px-L;
         position: relative;
         z-index: 2;
         transition: $transition;
@@ -690,7 +689,7 @@ $transition: all 0.3s ease-in-out;
             height: 100%;
             display: grid;
             align-items: flex-end;
-            aspect-ratio: 5 / 4;
+            aspect-ratio: 3.6 / 4;
           }
         }
         &__text {

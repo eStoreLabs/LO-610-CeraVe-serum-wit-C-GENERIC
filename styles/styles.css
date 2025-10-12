@@ -185,10 +185,10 @@
 }
 @container es-rc-content (min-width: 980px) {
   #es-rc #es-rc-content .es-kv__right {
-    width: 71%;
+    width: 74%;
   }
   #es-rc #es-rc-content .es-kv__right__logo {
-    right: 7%;
+    right: 7.5%;
   }
 }
 #es-rc #es-rc-content .es-features {
@@ -401,8 +401,7 @@
 }
 #es-rc #es-rc-content .es-benefits__image.es-mobile {
   width: 80%;
-  max-width: 300px;
-  padding: 32px;
+  max-width: 350px;
 }
 #es-rc #es-rc-content .es-benefits__image__container {
   position: relative;
@@ -542,7 +541,7 @@
 }
 #es-rc #es-rc-content .es-cross__item__image {
   max-width: 170px;
-  padding: 24px;
+  padding: 24px 24px 0 24px;
   position: relative;
   z-index: 2;
   transition: all 0.3s ease-in-out;
@@ -625,7 +624,7 @@
     height: 100%;
     display: grid;
     align-items: flex-end;
-    aspect-ratio: 5/4;
+    aspect-ratio: 3.6/4;
   }
   #es-rc #es-rc-content .es-cross__item__text-description {
     height: 140px;
